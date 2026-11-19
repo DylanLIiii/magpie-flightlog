@@ -1,0 +1,39 @@
+{
+  "name": "magpie-flightlog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Magpie 用量观察 · 历史吞吐与并发分析",
+  "type": "module",
+  "main": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "serve.mjs",
+    "lib",
+    "page",
+    "ui",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "start": "bun serve.mjs",
+    "test": "bun test"
+  },
+  "magpie": {
+    "name": "Flightlog",
+    "page": {
+      "title": "Flightlog",
+      "titles": {
+        "zh": "用量观察"
+      },
+      "file": "page/index.html",
+      "service": {
+        "port": 3467,
+        "option": "port"
+      }
+    },
+    "permissions": [],
+    "options": {
+      "port": 3467
+    }
+  }
+}

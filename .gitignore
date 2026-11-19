@@ -1,0 +1,8 @@
+node_modules/
+*.sqlite*
+*.tgz
+/LOCAL-VERIFICATION.md
+/.impeccable/
+*.jsonl
+.env
+.env.*
